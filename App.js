@@ -44,6 +44,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={style.body}>
+        <Text style={style.title}>መቃኛ</Text>
         <StatusBar backgroundColor="#000" translucent />
         <Meter cents={this.state.note.cents} />
         <Note {...this.state.note} />
@@ -65,4 +66,9 @@ const style = StyleSheet.create({
     fontSize: 28,
     color: "#37474f",
   },
+  title: {
+    fontSize: 30,
+    fontWeight: "bold",
+    paddingBottom: 40,
+  }
 });
